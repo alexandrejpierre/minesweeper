@@ -41,6 +41,9 @@ gem 'capistrano-rails', group: :development
 # 10.06.2016: use MySQL in prod
 gem 'mysql', group: :production
 
+# 11.06.2016: adding passenger for prod
+gem 'passenger', '>= 5.0.25', require: 'phusion_passenger/rack_handler', group: :production
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
