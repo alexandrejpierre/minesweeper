@@ -24,7 +24,7 @@ test:
 # 10.06.2016: changed the production database config
 production:
   adapter: mysql
-  encoding: unicode
+  encoding: utf8
   database: minesweeper_production
   pool: 5
   username: minesweeper

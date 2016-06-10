@@ -42,7 +42,7 @@ namespace :deploy do
 	# 10.06.2016: added a restart scheme to restart the Passenger app server after deployment
 	desc 'Restart application'
 	task :restart do
-		on roles(:app), in :sequence, wait: 5 do
+		on roles(:app), in: :sequence, wait: 5 do
 			execute :touch, release_path.join('tmp/restart.txt')
 		end
 	end
