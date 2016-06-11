@@ -42,7 +42,7 @@ gem 'capistrano-rails', group: :development
 gem 'mysql', group: :production
 
 # 11.06.2016: adding passenger for prod
-gem 'passenger', '>= 5.0.25', require: 'phusion_passenger/rack_handler', group: :production
+# gem 'passenger', '>= 5.0.25', require: 'phusion_passenger/rack_handler', group: :production
 
 
 group :development, :test do
