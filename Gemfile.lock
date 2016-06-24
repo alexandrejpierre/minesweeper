@@ -89,7 +89,6 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.9.0)
     multi_json (1.12.1)
-    mysql (2.9.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (3.1.1)
@@ -98,6 +97,7 @@ GEM
     passenger (5.0.28)
       rack
       rake (>= 0.8.1)
+    pg (0.18.4)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -180,8 +180,8 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
-  mysql
   passenger (>= 5.0.25)
+  pg
   rails (= 4.2.6)
   responders (~> 2.0)
   sass-rails (~> 5.0)

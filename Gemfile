@@ -38,8 +38,8 @@ gem 'responders', '~> 2.0'
 # 10.06.2016: uncommented the gem
 gem 'capistrano-rails', group: :development
 
-# 10.06.2016: use MySQL in prod
-gem 'mysql', group: :production
+# 24.06.2016: use PostgreSQL in prod
+gem 'pg', group: :production
 
 # 11.06.2016: adding passenger for prod
 # 20.06.2016: uncommented gem

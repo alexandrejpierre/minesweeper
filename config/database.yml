@@ -21,11 +21,11 @@ test:
   database: db/test.sqlite3
 
 
-# 10.06.2016: changed the production database config
+# 24.06.2016: changed the production database config
 production:
-  adapter: mysql
-  encoding: utf8
+  adapter: postgresql
+  encoding: unicode
   database: minesweeper_production
   pool: 5
   username: minesweeper
-  password: N0b3ysc0min
+  password:
