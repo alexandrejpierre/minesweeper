@@ -61,5 +61,8 @@
 #   }
 
 # 24.06.2016: edited the production authentication setup
-ask(:password, nil, echo: false)
-server 'vps293117.ovh.net', user: 'minesweeper', port: 22, password: fetch(:password), roles: %w{web app db}
+server 'vps293117.ovh.net', user: 'minesweeper', port: 22, roles: %w{web app db}
+
+set :ssh_options, {
+  keys: %w(/home/pi/.ssh/id_rsa)
+}
