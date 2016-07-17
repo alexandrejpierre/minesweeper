@@ -29,3 +29,7 @@ require 'capistrano/rails'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
+
+# 24.06.2016: added Capistrano ssh doctor
+require 'capistrano/ssh_doctor'
+

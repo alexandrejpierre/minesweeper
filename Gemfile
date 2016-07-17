@@ -37,6 +37,8 @@ gem 'responders', '~> 2.0'
 # Use Capistrano for deployment
 # 10.06.2016: uncommented the gem
 gem 'capistrano-rails', group: :development
+# 24.06.2016: added capistrano ssh doctor
+gem 'capistrano-ssh-doctor', '~> 1.0', group: :development
 
 # 24.06.2016: use PostgreSQL in prod
 gem 'pg', group: :production
@@ -44,6 +46,9 @@ gem 'pg', group: :production
 # 11.06.2016: adding passenger for prod
 # 20.06.2016: uncommented gem
 gem 'passenger', '>= 5.0.25', require: 'phusion_passenger/rack_handler', group: :production
+
+# 17.07.2016: added the thin gem for the production server
+gem 'thin', group: :production
 
 
 group :development, :test do
