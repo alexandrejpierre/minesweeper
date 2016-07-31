@@ -1,4 +1,5 @@
 class MessagesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_message, only: [:show, :edit, :update, :destroy]
 
   # GET /messages
@@ -9,7 +10,9 @@ class MessagesController < ApplicationController
 
   # GET /messages/1
   # GET /messages/1.json
+  # 24.07.2016: modified the show statement
   def show
+	@message = Message.find(params[:id])
   end
 
   # GET /messages/new

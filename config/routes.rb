@@ -1,9 +1,22 @@
 Rails.application.routes.draw do
+  resources :users
+  resources :players
   resources :messages
+  resources :sessions
+  
+   #30.07.2016: added the signup route
+  get 'signup', to: 'users#new', as: 'signup'
+  
+  #30.07.2016: added the login and logout routes
+  get 'login', to: "sessions#new", as: "login"
+  get 'logout', to: "sessions#destroy", as: "logout"
+  
   root 'messages#index'
+ 
   
   namespace :api do
 	resources :messages
+	resources :players
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

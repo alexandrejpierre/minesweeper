@@ -29,7 +29,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'responders', '~> 2.0'
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+#24.07.2016: uncommented the gem
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -63,4 +64,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+# 24.07.2016: addition of the bootstrap gem for layout & authentication
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+
 
