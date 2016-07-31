@@ -1,6 +1,6 @@
 module Api
 	class PlayersController < ApplicationController
-		#30.07.2016: added the oken authentication
+		#30.07.2016: added the token authentication
 		before_action :authenticate_token!
 		
 		respond_to :json
@@ -12,6 +12,7 @@ module Api
 	
 		def create
 			@player = Player.new(player_params)
+			@player.save
 			respond_with @player 
 			
 		end	

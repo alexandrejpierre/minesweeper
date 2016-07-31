@@ -49,7 +49,8 @@ gem 'pg', group: :production
 gem 'passenger', '>= 5.0.25', require: 'phusion_passenger/rack_handler', group: :production
 
 # 17.07.2016: added the thin gem for the production server
-gem 'thin', group: :production
+# 31.07.2016: added thin also as dev server
+gem 'thin'
 
 
 group :development, :test do
