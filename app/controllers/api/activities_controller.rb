@@ -19,7 +19,7 @@ module Api
 		private
 		
 		def activity_params
-			params.require(:activity).permit(:player,:level)
+			params.require(:activity).permit(:name,:level)
 		end
 		
 	end
