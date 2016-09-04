@@ -24,7 +24,7 @@ module Api
 		private
 		
 		def ranking_params
-			params.require(:ranking).permit(:name,:level)
+			params.require(:name,:level)
 		end
 		
 
