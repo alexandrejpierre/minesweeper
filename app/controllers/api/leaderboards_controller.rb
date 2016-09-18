@@ -12,7 +12,7 @@ module Api
 			#Best score of the user on the level
 			@b=@table.where("name = ?",params[:name]).order(:score).first
 			#Concatenation
-			if !@b.nil? and @a.where("name= ?",params[:name]).first.nil?
+			if !@b.nil? and !@a.to_s.include?(params[:name])
 					@a.append(@b)
 			end
 			#Addition of the rank
