@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.5.0'
+lock '3.6.1'
 
 # 10.06.2016: application name set to minesweeper, and repository set
 set :application, 'minesweeper'
